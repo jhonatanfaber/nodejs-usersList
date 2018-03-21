@@ -1,0 +1,36 @@
+[
+    {
+        "username": "juanito123",
+        "name": "juan",
+        "id": "juanito123-1",
+        "email": "omgjuani@gmail.com",
+        "tweets": [
+            {
+                "id": 1,
+                "text": "mi primer tweet",
+                "owner": "juanito123",
+                "createdAt": 1521572574112
+            },
+            {
+                "id": 621,
+                "text": "holaa hey",
+                "owner": "juanito123",
+                "createdAt": 1521640220887
+            }
+        ]
+    },
+    {
+        "username": "pepito67",
+        "name": "Pepe",
+        "id": "pepito67-2",
+        "email": "pepillo@gmail.com",
+        "tweets": [
+            {
+                "id": 2,
+                "text": "mi tweet",
+                "owner": "pepito67",
+                "createdAt": 1521572574173
+            }
+        ]
+    }
+]
