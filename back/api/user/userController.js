@@ -1,8 +1,7 @@
-
 var fs = require('fs');
-var fileUrl = 'users.json';
-var getUsersFromFile = fs.readFileSync(fileUrl).toString();
-var users = JSON.parse(getUsersFromFile);
+
+var extractor = require('../../utils.js');
+var users =extractor.getUserDataFromJSon();
 
 
 module.exports = {
@@ -21,8 +20,8 @@ function getAllUsers(req, res){
 function getAUser(req, res){
     var user = users.find(user => user.username == req.params.username);
     if (user == null) {
-        return res.sendStatus(400);
-    }
+        return res.sendStatus(400); 
+    } 
     return res.status(200).json(user);
 }
 

@@ -1,13 +1,12 @@
 var fs = require('fs');
-var fileUrl = 'users.json';
-var getUsersFromFile = fs.readFileSync(fileUrl).toString();
-var users = JSON.parse(getUsersFromFile);
 
-module.export = {
+var extractor = require('../../utils.js');
+var users =extractor.getUserDataFromJSon();
+
+module.exports = {
     getTweet : getTweet,
     deleteTweet : deleteTweet
 }
-
 
 function getTweet(req, res){
     var lookedTweet = {};
